@@ -13,3 +13,17 @@ SELECT Nombre, Apellido FROM persona WHERE id = 1
 DELETE FROM educación WHERE id = 1
 
 UPDATE educación SET ContenidosAprendidos = 'SQL' WHERE id = 2 
+
+SELECT count(id) FROM educación WHERE persona_id = 1 
+
+SELECT sum(id) FROM educación
+
+SELECT min(id) FROM educación
+
+SELECT max(id) FROM educación
+
+SELECT AVG(id) FROM educación
+
+SELECT * FROM persona INNER JOIN educación ON persona.id = educación.persona_id
+
+SELECT * FROM persona INNER JOIN educación ON persona.id = educación.persona_id ORDER BY persona.nombre
