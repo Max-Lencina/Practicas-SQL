@@ -6,13 +6,13 @@ INSERT INTO educación VALUES(1, 'Argentina programa', 'Segunda etapa #YoProgram
 
 INSERT INTO educación VALUES (2, 'Argentina programa', 'Primera etapa #SéProgramar', '2022-02-01', '2022-04-15', 'La primera etapa de Argentina Programa es un curso introductorio en el que se aprende los fundamentos básicos de la programación para dar los primeros pasos en el mundo tecnológico.', 'fundamentos básicos de la programación, programación imperativa, programación con Objetos.', 'aproximadamente 60 horas', 'En línea / virtual', 1)
 
-SELECT * FROM persona WHERE idpersona = 1
+SELECT * FROM persona WHERE id = 1
 
-SELECT Nombre, Apellido FROM persona WHERE idpersona = 1
+SELECT Nombre, Apellido FROM persona WHERE id = 1
 
-DELETE FROM educación WHERE ideducacion = 1
+DELETE FROM educación WHERE id = 1
 
-UPDATE educación SET ContenidosAprendidos = 'SQL' WHERE ideducacion = 2 
+UPDATE educación SET ContenidosAprendidos = 'SQL' WHERE id = 2 
 
 SELECT count(id) FROM educación WHERE persona_id = 1 
 
